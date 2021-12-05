@@ -33,7 +33,7 @@ struct ContentView: View {
                                     .foregroundColor(book.rating == 1 ? .red : .primary)
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(book.rating == 1 ? .red : .secondary)
-                                    .opacity(book.rating == 1 ? 0.5 : 1)
+                                    .opacity(book.rating == 1 ? 0.85 : 1)
                             }
                         }
                     }
