@@ -20,7 +20,7 @@ struct AddBookView: View {
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller", "Non-fiction"]
     
     var isFormComplete: Bool {
-        if title.isReallyEmpty || author.isReallyEmpty {
+        if title.isReallyEmpty || author.isReallyEmpty || genre.isEmpty {
             return false
         }
         return true
